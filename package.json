@@ -1,0 +1,35 @@
+{
+	"name": "rdp_connect",
+	"description": "Connexion RDP via ligne de commande & URL protocol",
+	"version": "1.0.0",
+	"author": "DCAlexandre",
+	"copyright": "Copyright © year ${author}",
+	"private": true,
+	"main": "src/rdp_connect.js",
+	"homepage": "https://github.com/DCAlexandre/rdp_connect#readme",
+	"bugs": {
+		"url": "https://github.com/DCAlexandre/rdp_connect/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DCAlexandre/rdp_connect.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"start": "cls && set NODE_ENV=development&& node src/rdp_connect.js",
+		"build": "cls && set NODE_ENV=production&& pkg src/rdp_connect.js --targets node14-win-x64 --out-path dist --title=rdp_connect --debug"
+	},
+	"bin": "src/rdp_connect.js",
+	"pkg": {
+		"scripts": [
+			"src/rdp_connect.js"
+		]
+	},
+	"devDependencies": {
+		"dotenv": "^8.2.0",
+		"lodash.defaults": "^4.2.0",
+		"pkg": "^4.4.9",
+		"q": "^1.5.1",
+		"sanitize-filename": "^1.6.3"
+	}
+}

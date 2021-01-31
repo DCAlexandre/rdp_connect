@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\rdp]
+@="rdp:RDP Connect"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\rdp\DefaultIcon]
+@="\"C:\\Windows\\System32\\mstsc.exe\""
+
+[HKEY_CLASSES_ROOT\rdp\shell]
+
+[HKEY_CLASSES_ROOT\rdp\shell\open]
+
+[HKEY_CLASSES_ROOT\rdp\shell\open\command]
+@="\"D:\\Github\\rdp_connect\\dist\\rdp_connect.exe\" \"%1\""
